@@ -9,7 +9,6 @@ class Store {
         this.api.setItem(this.key, value);
     }
 }
-
 export class UserStore extends Store {
     constructor(key) {
         super(sessionStorage);

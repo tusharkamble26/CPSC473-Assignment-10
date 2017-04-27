@@ -17,7 +17,6 @@ export class ChatForm {
         this.$form = $(formSel);
         this.$input = $(inputSel);
     }
-
     init(submitCallback) {
         this.$form.submit((event) => {
             event.preventDefault();
@@ -28,7 +27,6 @@ export class ChatForm {
         this.$form.find('button').on('click', () => this.$form.submit());
     }
 }
-
 export class ChatList {
     constructor(listSel, username) {
         this.$list = $(listSel);
@@ -68,7 +66,6 @@ export class ChatList {
         this.$list.append($messageRow);
         $messageRow.get(0).scrollIntoView();
     }
-
     init() {
         this.timer = setInterval(() => {
             $('[data-time]').each((idx, element) => {
